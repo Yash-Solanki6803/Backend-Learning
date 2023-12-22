@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html Page</title>
+  </head>
+  <body>
+    <h1>This page is rendered by backend server</h1>
+    <p>I used `res.sendFile()` method to send the html page</p>
+    <p>
+      The absolute path was given to the function by using the `path` module
+    </p>
+    <p>
+      `path` module has a method `.resolve()` and then use `.join()` method with
+      the relative path of htmlPage as argument.
+    </p>
+  </body>
+</html>
