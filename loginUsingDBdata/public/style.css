@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: rgb(102, 168, 168);
+  padding: 40px 20px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 80%;
+  width: 50%;
+}
+
+h1 {
+  color: rgb(238, 246, 255);
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-family: sans-serif;
+}
+
+form {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 60%;
+}
+
+.input {
+  height: 30px;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  padding: 0 10px;
+  font-family: sans-serif;
+}
+
+.input:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.notification {
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+}
+
+.notification p {
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.notification a {
+  text-decoration: none;
+  color: rgb(16, 16, 16);
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.1s ease-in-out;
+}
+
+.notification a:hover {
+  color: rgb(255, 255, 255);
+  transform: scale(1.1);
+}
+
+.error {
+  color: rgb(198, 22, 22);
+  font-size: 0.8rem;
+  font-family: sans-serif;
+  position: absolute;
+  bottom: 150%;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}

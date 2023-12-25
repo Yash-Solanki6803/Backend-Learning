@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logged In</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hey <%=locals.name%> : <%=locals.enrollment%></h1>
+      <form action="/logout" method="GET">
+        <input class="input" type="submit" value="Logout" />
+      </form>
+    </div>
+  </body>
+</html>
