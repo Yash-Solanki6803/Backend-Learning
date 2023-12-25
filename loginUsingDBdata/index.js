@@ -76,6 +76,13 @@ app.post("/register", async (req, res) => {
     res.render("register", {
       error: "Enrollment number should be of 12 digits",
     });
+    return;
+  }
+  const userExists = await User.findOne({ enrollment: enrollment });
+
+  if (userExists) {
+    res.render("register", { error: "User already exists" });
+    return;
   }
   const hashedPassword = await bcrypt.hash(password, 10);
   const user = new User({
