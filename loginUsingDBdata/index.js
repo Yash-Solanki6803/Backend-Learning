@@ -111,6 +111,8 @@ app.post("/login", async (req, res) => {
     } else {
       res.render("login", { enrollment, error: "Invalid Credentials" });
     }
+  } else {
+    res.render("login", { enrollment, error: "User doesn't exist." });
   }
 });
 
